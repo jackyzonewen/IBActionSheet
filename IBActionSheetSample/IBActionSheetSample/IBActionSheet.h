@@ -63,6 +63,7 @@ typedef NS_ENUM(NSInteger, IBActionSheetButtonCornerType) {
     
 }
 
+-(void)dismissAnimated:(BOOL)animated;
 - (void)showInView:(UIView *)theView;
 - (NSInteger)addButtonWithTitle:(NSString *)title;
 - (void)dismissWithClickedButtonIndex:(NSInteger)buttonIndex animated:(BOOL)animated;
@@ -136,7 +137,7 @@ typedef NS_ENUM(NSInteger, IBActionSheetButtonCornerType) {
 
 - (void)resizeForPortraitOrientation;
 - (void)resizeForLandscapeOrientation;
-- (id)initWithTitle:(NSString *)title font:(UIFont *)font;
+- (id)initWithTitle:(NSString *)title;
 
 
 
